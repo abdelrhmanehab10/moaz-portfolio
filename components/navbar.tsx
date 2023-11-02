@@ -32,10 +32,10 @@ const Navbar: FC<NavbarProps> = ({}) => {
         "
     >
       <Image
-        className="mx-auto object-cover md:mx-0 md:my-auto"
+        className="w-60 mx-auto object-cover md:mx-0 md:my-auto"
         src={"/logo2.png"}
-        width={200}
-        height={100}
+        width={500}
+        height={500}
         alt="moaz-logo"
       />
       <DropdownMenu>
@@ -57,10 +57,6 @@ const Navbar: FC<NavbarProps> = ({}) => {
           <DropdownMenuItem className="text-white justify-center">
             تواصل معي
           </DropdownMenuItem>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem className="text-white justify-center">
-            المدونه
-          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
       <ul className="md:flex hidden gap-3 text-sm text-main">
@@ -70,9 +66,6 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <li className="cursor-pointer hover:text-main/70 transition">اعمالي</li>
         <li className="cursor-pointer hover:text-main/70 transition">
           تواصل معي
-        </li>
-        <li className="cursor-pointer hover:text-main/70 transition">
-          المدونه
         </li>
       </ul>
     </nav>
