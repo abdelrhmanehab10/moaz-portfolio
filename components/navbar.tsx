@@ -10,13 +10,11 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useSheet } from "@/hooks/use-sheet-store";
 import Link from "next/link";
 
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
-  const { onOpen } = useSheet();
   return (
     <nav
       className="
@@ -47,11 +45,8 @@ const Navbar: FC<NavbarProps> = ({}) => {
             خدماتي
           </DropdownMenuItem>
           <DropdownMenuSeparator />
-          <DropdownMenuItem
-            onClick={onOpen}
-            className="text-white justify-center"
-          >
-            اعمالي
+          <DropdownMenuItem className="text-white justify-center">
+            <Link href="/works">اعمالي</Link>
           </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem className="text-white justify-center">

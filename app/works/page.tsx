@@ -1,38 +1,38 @@
 import { FC } from "react";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
+import OpinionSlider from "@/components/opnion-slider";
 
-import OpinionsCard from "./opinions-card";
-import { Navigation } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/navigation";
 interface WorksProps {}
 
 const Works: FC<WorksProps> = ({}) => {
   return (
     <>
-      <Image
-        className="w-full"
-        src="/work1.jpeg"
-        width={700}
-        height={700}
-        alt="work"
-      />
-      <Image
-        className="w-full"
-        src="/work2.jpeg"
-        width={700}
-        height={700}
-        alt="work"
-      />
-      <Image
-        className="w-full"
-        src="/work3.jpeg"
-        width={700}
-        height={700}
-        alt="work"
-      />
+      <div className="bg-main rounded-lg p-5 mx-auto my-5 text-white text-2xl w-fit">
+        <h1>اعمالي</h1>
+      </div>
+      <div className="md:grid grid-cols-3 gap-5 justify-center">
+        <Image
+          className="w-full"
+          src="/work1.jpeg"
+          width={700}
+          height={700}
+          alt="work"
+        />
+        <Image
+          className="w-full"
+          src="/work2.jpeg"
+          width={700}
+          height={700}
+          alt="work"
+        />
+        <Image
+          className="w-full"
+          src="/work3.jpeg"
+          width={700}
+          height={700}
+          alt="work"
+        />
+      </div>
       <div className="md:grid md:grid-cols-3 md:grid-rows-3">
         <div className="w-2/3 my-5 mx-auto text-center">
           <Image
@@ -134,16 +134,6 @@ const Works: FC<WorksProps> = ({}) => {
           />
           Dates - E-commerce
         </div>
-        {/* <div className="w-2/3 my-5 mx-auto text-center">
-  <Image
-    className="d shadow-black w-64 md:w-full md:h-20 md:object-cover mx-auto border-2 border-black rounded-lg p-5 mb-3"
-    src="/fashion.png"
-    width={700}
-    height={700}
-    alt="work"
-  />
-  Fashion - E-commerce
-</div> */}
         <div className="w-2/3 my-5 mx-auto text-center">
           <Image
             className="w-64 md:w-full md:h-20 md:object-cover mx-auto border-2 border-black rounded-lg p-5 mb-3"
@@ -156,39 +146,7 @@ const Works: FC<WorksProps> = ({}) => {
         </div>
       </div>
       <h2 className="text-main font-bold text-center">اراء العملاء</h2>
-      <Swiper
-        spaceBetween="50px"
-        navigation={true}
-        modules={[Navigation]}
-        className="md:w-1/2 w-[80%] mx-auto"
-      >
-        <SwiperSlide className="my-2 border border-black rounded-2xl px-10 py-5">
-          <OpinionsCard
-            clientName="حمزه علاء"
-            opinion="يارتني قابلت م/معاذ من زمان ما تتصوروا شلون غيرت موقعنا من ورا ورا وصاير
-    أول صفحة بجوجل شكرا لك على هالمجهود.
-    "
-          />
-        </SwiperSlide>
-        <SwiperSlide className="my-2 border border-black rounded-2xl px-10 py-5">
-          <OpinionsCard
-            clientName="سليمان حمزة"
-            opinion="شكرا يا بطل أنا وراعي المشروع ما نفهم شي بالسيو ، بس معاذ فهمنا الصح وسوا شغل رهيب صاير يوميا فيه طلبات جديدة."
-          />
-        </SwiperSlide>
-        <SwiperSlide className="my-2 border border-black rounded-2xl px-10 py-5">
-          <OpinionsCard
-            clientName="خديجة سلطان"
-            opinion="صدقوني هالولد عنده خبرة كان موقعي مختفي في النت ، بس مع السيو اللي سواه بلشت أشوف تحسن سريع ، ممتنة لك."
-          />
-        </SwiperSlide>
-        <SwiperSlide className="my-2 border border-black rounded-2xl px-10 py-5">
-          <OpinionsCard
-            clientName="محمد صابر"
-            opinion="يا جدعان أنا متعامل مع معاذ في سيو ومفيش كلام شغله فصل وجاب نتائج جامدة ، موقعي بقي أول صفحة في جوجل الله يخليك يا وحش."
-          />
-        </SwiperSlide>
-      </Swiper>
+      <OpinionSlider />
     </>
   );
 };

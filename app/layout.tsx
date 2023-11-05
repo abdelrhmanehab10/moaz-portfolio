@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Alexandria } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import SheetProvider from "@/components/providers/sheet-provider";
 import Footer from "@/components/footer";
 
 const font = Alexandria({
@@ -23,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <body className={font.className}>
-        <SheetProvider />
         <Navbar />
         {children}
         <Footer />
