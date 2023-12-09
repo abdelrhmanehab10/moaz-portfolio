@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
+import { WhatICanWorkWithImages } from "@/constant";
 
 interface HeroProps {}
 
@@ -16,7 +17,7 @@ const Hero: FC<HeroProps> = ({}) => {
         md:items-center
         md:bg-none
         md:relative
-        bg-[url('/moaz.jpeg')] 
+        bg-[url('/hero/profile-image.jpeg')] 
         bg-center 
         bg-cover 
         text-white 
@@ -29,9 +30,9 @@ const Hero: FC<HeroProps> = ({}) => {
     >
       <Image
         className="w-full h-full md:block hidden"
-        src={"/moaz.jpeg"}
-        width={300}
-        height={300}
+        src={"/hero/profile-image.jpeg"}
+        width={1000}
+        height={1000}
         alt="moaz"
       />
       <div>
@@ -51,28 +52,20 @@ const Hero: FC<HeroProps> = ({}) => {
           </p>
         </div>
         <div className="md:absolute md:bottom-0 w-full flex justify-around pb-5 px-5 gap-2">
-          <div className="bg-white rounded-xl px-5 py-2 shadow-black/40 shadow-md">
-            <Image src={"/zid.png"} width={100} height={100} alt="zid-logo" />
-          </div>
-          <div className="bg-white rounded-xl px-5 py-2 shadow-black/40 shadow-md">
-            <Image
-              src={"/shopify.png"}
-              width={100}
-              height={100}
-              alt="zid-logo"
-            />
-          </div>
-          <div className="bg-white rounded-xl px-5 py-2 shadow-black/40 shadow-md">
-            <Image
-              src={"/wordpress.png"}
-              width={100}
-              height={100}
-              alt="zid-logo"
-            />
-          </div>
-          <div className="bg-white rounded-xl px-5 py-2 shadow-black/40 shadow-md">
-            <Image src={"/sala.png"} width={100} height={100} alt="zid-logo" />
-          </div>
+          {WhatICanWorkWithImages.map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-white rounded-xl px-5 py-2 shadow-black/40 shadow-md md:w-1/2"
+            >
+              <Image
+                src={`/hero/${item}`}
+                width={1000}
+                height={1000}
+                alt="zid-logo"
+                className="md:w-1/2 md:mx-auto"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

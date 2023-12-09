@@ -10,7 +10,7 @@ interface ServicesCardProps {
   imgSrc: string;
   title: string;
   content: string;
-  item: string;
+  item: number;
 }
 
 const ServicesCard: FC<ServicesCardProps> = ({
@@ -21,10 +21,13 @@ const ServicesCard: FC<ServicesCardProps> = ({
 }) => {
   return (
     <>
-      <AccordionItem className="md:hidden bg-main rounded-lg mt-3" value={item}>
+      <AccordionItem
+        className="md:hidden bg-main rounded-lg mt-3"
+        value={String(item)}
+      >
         <AccordionTrigger className="flex flex-col text-white text-xl px-5">
           <Image
-            src={imgSrc}
+            src={`/services${imgSrc}`}
             width={200}
             height={200}
             alt="keyword-image"
