@@ -13,21 +13,42 @@ const Works: FC<WorksProps> = ({}) => {
       <div className="md:grid grid-cols-3 gap-5 justify-center">
         <Image
           className="w-full"
-          src="/work1.jpeg"
+          src="/works/work1.jpg"
           width={700}
           height={700}
           alt="work"
         />
         <Image
           className="w-full"
-          src="/work2.jpeg"
+          src="/works/work2.jpg"
           width={700}
           height={700}
           alt="work"
         />
         <Image
           className="w-full"
-          src="/work3.jpeg"
+          src="/works/work3.jpg"
+          width={700}
+          height={700}
+          alt="work"
+        />
+        <Image
+          className="w-full"
+          src="/works/work4.jpg"
+          width={700}
+          height={700}
+          alt="work"
+        />
+        <Image
+          className="w-full"
+          src="/works/work5.jpg"
+          width={700}
+          height={700}
+          alt="work"
+        />
+        <Image
+          className="w-full"
+          src="/works/work6.jpg"
           width={700}
           height={700}
           alt="work"
