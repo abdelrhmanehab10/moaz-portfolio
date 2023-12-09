@@ -28,7 +28,7 @@ const Works: FC<WorksProps> = ({}) => {
           <div key={idx} className="w-2/3 my-5 mx-auto text-center">
             <Image
               className="w-64 md:w-full md:h-20 md:object-cover mx-auto border-2 border-black rounded-lg p-5 mb-3"
-              src={company.img}
+              src={`/companies${company.img}`}
               width={700}
               height={700}
               alt="work"

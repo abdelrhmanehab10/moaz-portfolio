@@ -11,10 +11,12 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
+  const router = useRouter();
   return (
     <nav
       className="
@@ -30,7 +32,8 @@ const Navbar: FC<NavbarProps> = ({}) => {
         "
     >
       <Image
-        className="w-60 mx-auto object-cover md:mx-0 md:my-auto"
+        onClick={() => router.push("/")}
+        className="cursor-pointer w-60 mx-auto object-cover md:mx-0 md:my-auto"
         src={"/logo2.png"}
         width={500}
         height={500}
