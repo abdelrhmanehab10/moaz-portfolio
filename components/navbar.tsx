@@ -61,9 +61,11 @@ const Navbar: FC<NavbarProps> = ({}) => {
         <li className="cursor-pointer hover:text-main/70 transition">
           <Link href="#services">خدماتي</Link>
         </li>
-        <li className="cursor-pointer hover:text-main/70 transition">اعمالي</li>
         <li className="cursor-pointer hover:text-main/70 transition">
-          تواصل معي
+          <Link href={"/works"}>اعمالي</Link>
+        </li>
+        <li className="cursor-pointer hover:text-main/70 transition">
+          <Link href={"#contact"}>تواصل معي</Link>
         </li>
       </ul>
     </nav>
