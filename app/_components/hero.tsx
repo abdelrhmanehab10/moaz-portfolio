@@ -58,6 +58,7 @@ const Hero: FC<HeroProps> = ({}) => {
               className="bg-white rounded-xl px-5 py-2 shadow-black/40 shadow-md md:w-1/2"
             >
               <Image
+                loading="lazy"
                 src={`/hero/${item}`}
                 width={1000}
                 height={1000}

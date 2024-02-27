@@ -28,6 +28,7 @@ const ServicesCard: FC<ServicesCardProps> = ({
         <AccordionTrigger className="flex flex-col text-white text-xl px-5">
           <Image
             src={imgSrc}
+            loading="lazy"
             width={200}
             height={200}
             alt="keyword-image"
