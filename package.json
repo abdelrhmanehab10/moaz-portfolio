@@ -17,6 +17,8 @@
     "clsx": "^2.0.0",
     "lucide-react": "^0.290.0",
     "next": "14.0.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^9.4.0",
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.0.3",
