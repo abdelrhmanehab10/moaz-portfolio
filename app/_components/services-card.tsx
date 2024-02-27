@@ -32,6 +32,8 @@ const ServicesCard: FC<ServicesCardProps> = ({
             height={200}
             alt="keyword-image"
             className="mx-auto w-48"
+            decoding="async"
+            data-nimg="1"
           />
           {title}
         </AccordionTrigger>

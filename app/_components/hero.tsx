@@ -63,6 +63,8 @@ const Hero: FC<HeroProps> = ({}) => {
                 height={1000}
                 alt="zid-logo"
                 className="md:w-1/2 md:mx-auto"
+                decoding="async"
+                data-nimg="1"
               />
             </div>
           ))}
