@@ -49,7 +49,6 @@ const OpinionSlider: FC<OpinionSliderProps> = ({}) => {
           opinion="أشكر معاذ على تحسين موقعي الإلكتروني. لاحظت زيادة رهيبة في عدد الزيارات والمبيعات من وقت ما شغلت مع معاذ. أنصح به بشدة!!."
         />
       </SwiperSlide>
-      s
     </Swiper>
   );
 };
