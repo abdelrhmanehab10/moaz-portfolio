@@ -1,43 +1,49 @@
 import { FC } from "react";
 import Image from "next/image";
 import OpinionSlider from "@/components/opnion-slider";
-import { companies, worksImages } from "@/constant";
+import PartenarSlider from "./_components/PartenarSlider";
+import EmblaCarousel from "./_components/embla-carousel";
+import { EmblaOptionsType } from "embla-carousel";
+import "./_css/embla.css";
+import "./_css/base.css";
 
 interface WorksProps {}
 
+const OPTIONS: EmblaOptionsType = { loop: true, direction: "rtl" };
+const SLIDE_COUNT = 9;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 const Works: FC<WorksProps> = ({}) => {
   return (
     <>
-      <div className="bg-main rounded-lg p-5 mx-auto my-5 text-white text-2xl w-fit">
-        <h1>اعمالي</h1>
+      <div className="bg-main mx-auto rounded-lg p-5 m-5 text-white w-fit">
+        <h1 className="text-2xl">اعمالي</h1>
       </div>
-      <div className="md:grid grid-cols-3 gap-5 justify-center">
-        {worksImages.map((img, idx) => (
-          <Image
-            key={idx}
-            className="w-full"
-            src={`/works/${img}`}
-            width={700}
-            height={700}
-            alt="work"
-          />
-        ))}
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+      <div className="md:flex items-end justify-center mt-3">
+        <PartenarSlider
+          description={
+            <p>
+              شاهد نتائج تحسين محركات البحث المُذهلة! <br /> صور تُظهر كيف
+              ساعدتُ عملائي على تحقيق أرباحٍ مُضاعفة! <br /> بيانات مُقنعة -
+              تحسينات ملموسة - نجاح مُثبت
+            </p>
+          }
+          COMPANIES={["9", "10", "11", "12", "13"]}
+        />
+        <PartenarSlider
+          description={
+            <p>
+              انشاء متاجر إلكترونية! <br /> خبرة واسعة في إنشاء متاجر تُحقق
+              أرباحًا.
+            </p>
+          }
+          COMPANIES={["1", "2", "3", "4", "5", "6", "7", "8"]}
+        />
       </div>
-      <div className="md:grid md:grid-cols-3 md:grid-rows-3">
-        {companies.map((company, idx) => (
-          <div key={idx} className="w-2/3 my-5 mx-auto text-center">
-            <Image
-              className="w-64 md:w-full md:h-20 md:object-cover mx-auto border-2 border-black rounded-lg p-5 mb-3"
-              src={`/companies${company.img}`}
-              width={700}
-              height={700}
-              alt="work"
-            />
-            {company.title}
-          </div>
-        ))}
-      </div>
-      <h2 className="text-main font-bold text-center">اراء العملاء</h2>
+      <h2 className="text-main font-bold text-center mt-3">اراء العملاء</h2>
+      <p className="text-main text-xs text-light text-center mt-3">
+        لا تأخذ كلامنا فقط، إليك ما يقوله عملاؤنا: آراء حقيقية من عملاء سابقين!
+      </p>
       <OpinionSlider />
     </>
   );

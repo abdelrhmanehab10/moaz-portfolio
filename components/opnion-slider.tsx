@@ -21,30 +21,35 @@ const OpinionSlider: FC<OpinionSliderProps> = ({}) => {
     >
       <SwiperSlide className="my-2 border border-black rounded-2xl px-10 py-5">
         <OpinionsCard
-          clientName="حمزه علاء"
-          opinion="يارتني قابلت م/معاذ من زمان ما تتصوروا شلون غيرت موقعنا من ورا ورا وصاير
-      أول صفحة بجوجل شكرا لك على هالمجهود.
-      "
+          clientName="فهد بن نايف"
+          opinion="كنت متعطل في جلب الزوار إلى متجري الإلكتروني. تواصلت مع معاذ، وقام بتحسين موقعي بشكل احترافي، والآن أصبح متجري مشهور على الإنترنت. شكرًا جزيلاً يا معاذ!"
         />
       </SwiperSlide>
       <SwiperSlide className="my-2 border border-black rounded-2xl px-10 py-5">
         <OpinionsCard
-          clientName="سليمان حمزة"
-          opinion="شكرا يا بطل أنا وراعي المشروع ما نفهم شي بالسيو ، بس معاذ فهمنا الصح وسوا شغل رهيب صاير يوميا فيه طلبات جديدة."
+          clientName="خالد بن مشعل"
+          opinion="معاذ ساعدني في حل مشكلة كبيرة كانت تواجه متجري الإلكتروني، وهي قلة الزوار. بعد تحسينه للموقع، زاد عدد الزبائن بشكل ملحوظ، وزادت المبيعات."
         />
       </SwiperSlide>
       <SwiperSlide className="my-2 border border-black rounded-2xl px-10 py-5">
         <OpinionsCard
-          clientName="خديجة سلطان"
-          opinion="صدقوني هالولد عنده خبرة كان موقعي مختفي في النت ، بس مع السيو اللي سواه بلشت أشوف تحسن سريع ، ممتنة لك."
+          clientName="سلطان بن رائد"
+          opinion="كنت محتاج خبير لتحسين محركات البحث لموقعي الإلكتروني، سألت أصحابي ورشحوا لي معاذ، والله ما ندمت! حقق لي نتائج خيالية. شكرًا لك يا معاذ!."
         />
       </SwiperSlide>
       <SwiperSlide className="my-2 border border-black rounded-2xl px-10 py-5">
         <OpinionsCard
-          clientName="محمد صابر"
-          opinion="يا جدعان أنا متعامل مع معاذ في سيو ومفيش كلام شغله فصل وجاب نتائج جامدة ، موقعي بقي أول صفحة في جوجل الله يخليك يا وحش."
+          clientName="مشعل بن أحمد"
+          opinion="معاذ خبير ممتاز في تحسين محركات البحث. ساعدني على تحسين متجري الإلكتروني، والآن أصبح أسهل استخدامًا وجذابًا أكثر للزبائن. شكرًا لك يا معاذ!."
         />
       </SwiperSlide>
+      <SwiperSlide className="my-2 border border-black rounded-2xl px-10 py-5">
+        <OpinionsCard
+          clientName="فاطمة بنت مروان"
+          opinion="أشكر معاذ على تحسين موقعي الإلكتروني. لاحظت زيادة رهيبة في عدد الزيارات والمبيعات من وقت ما شغلت مع معاذ. أنصح به بشدة!!."
+        />
+      </SwiperSlide>
+      s
     </Swiper>
   );
 };

@@ -17,20 +17,22 @@ const Hero: FC<HeroProps> = ({}) => {
         md:items-center
         md:bg-none
         md:relative
-        bg-[url('/hero/profile-image.jpeg')] 
+        bg-[url('/hero/new-profile-image.jpeg')] 
         bg-center 
         bg-cover 
         text-white 
-        h-[70vh] 
+        h-screen 
         w-full 
         flex 
         flex-col 
         justify-end
+        relative
         "
     >
+      <div className="absolute md:hidden inset-0 bg-black/20"></div>
       <Image
         className="w-full h-full md:block hidden"
-        src={"/hero/profile-image.jpeg"}
+        src={"/hero/new-profile-image.jpeg"}
         width={1000}
         height={1000}
         alt="moaz"
