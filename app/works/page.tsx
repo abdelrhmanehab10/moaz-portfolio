@@ -29,46 +29,6 @@ const Works: FC<WorksProps> = ({}) => {
         <PartenarSlider
           description={
             <p className="text-center text-main">
-              عملاء سابقين! <br />
-              ساعدتهم بخدماتي في مضاعفة النتائج الخاصه بهم.
-            </p>
-          }
-          COMPANIES={[
-            {
-              src: "9",
-              description: "Nuts / E-commerce",
-              title: "Nahr Elgoud",
-              href: "https://nahraljoud.com/",
-            },
-            {
-              src: "10",
-              description: "Blog  E-commerce",
-              title: "Samel Blog",
-              href: "https://blog.samelstore.com/",
-            },
-            {
-              src: "11",
-              description: "Sports / E-commerce",
-              title: "Alaalm Elriady",
-              href: "https://alalamsport.com/",
-            },
-            {
-              src: "12",
-              description: "Care / E-commerce",
-              title: "Magstic care",
-              href: "https://majesticcaresa.com/ar",
-            },
-            {
-              src: "13",
-              description: "Detergents / E-commerce",
-              title: "Litro",
-              href: "https://litro.com.sa/",
-            },
-          ]}
-        />
-        <PartenarSlider
-          description={
-            <p className="text-center text-main">
               انشاء متاجر إلكترونية! <br /> خبرة واسعة في إنشاء متاجر تُحقق
               أرباحًا.
             </p>
@@ -121,6 +81,46 @@ const Works: FC<WorksProps> = ({}) => {
               title: "Lamsat Gariba",
               description: "Car accessories / E-commerce",
               href: "https://lamsatgariba.com/",
+            },
+          ]}
+        />
+        <PartenarSlider
+          description={
+            <p className="text-center text-main">
+              عملاء سابقين! <br />
+              ساعدتهم بخدماتي في مضاعفة النتائج الخاصه بهم.
+            </p>
+          }
+          COMPANIES={[
+            {
+              src: "9",
+              description: "Nuts / E-commerce",
+              title: "Nahr Elgoud",
+              href: "https://nahraljoud.com/",
+            },
+            {
+              src: "10",
+              description: "Blog  E-commerce",
+              title: "Samel Blog",
+              href: "https://blog.samelstore.com/",
+            },
+            {
+              src: "11",
+              description: "Sports / E-commerce",
+              title: "Alaalm Elriady",
+              href: "https://alalamsport.com/",
+            },
+            {
+              src: "12",
+              description: "Care / E-commerce",
+              title: "Magstic care",
+              href: "https://majesticcaresa.com/ar",
+            },
+            {
+              src: "13",
+              description: "Detergents / E-commerce",
+              title: "Litro",
+              href: "https://litro.com.sa/",
             },
           ]}
         />
