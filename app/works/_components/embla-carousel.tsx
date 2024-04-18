@@ -106,7 +106,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, tweenScale]);
 
   return (
-    <div className="embla overflow-hidden">
+    <div className="embla">
       <div className="" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((index) => (
