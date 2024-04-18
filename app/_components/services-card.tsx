@@ -28,10 +28,13 @@ const ServicesCard: FC<ServicesCardProps> = ({
         <AccordionTrigger className="flex flex-col text-white text-xl px-5">
           <Image
             src={imgSrc}
+            loading="lazy"
             width={200}
             height={200}
             alt="keyword-image"
             className="mx-auto w-48"
+            decoding="async"
+            data-nimg="1"
           />
           {title}
         </AccordionTrigger>
