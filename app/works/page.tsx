@@ -29,8 +29,8 @@ const Works: FC<WorksProps> = ({}) => {
         <PartenarSlider
           description={
             <p className="text-center text-main">
-              انشاء متاجر إلكترونية! <br /> خبرة واسعة في إنشاء متاجر تُحقق
-              أرباحًا.
+              عملاء سابقين! <br />
+              ساعدتهم بخدماتي في مضاعفة النتائج الخاصه بهم.
             </p>
           }
           COMPANIES={[
@@ -69,8 +69,8 @@ const Works: FC<WorksProps> = ({}) => {
         <PartenarSlider
           description={
             <p className="text-center text-main">
-              عملاء سابقين! <br />
-              ساعدتهم بخدماتي في مضاعفة النتائج الخاصه بهم.
+              انشاء متاجر إلكترونية! <br /> خبرة واسعة في إنشاء متاجر تُحقق
+              أرباحًا.
             </p>
           }
           COMPANIES={[
