@@ -33,17 +33,17 @@ const PartenarSlider = ({ description, COMPANIES }: Props) => {
           {COMPANIES.map((company, idx) => (
             <CarouselItem key={idx} className="pl-1 md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
-                <Card className="h-64 md:h-28 relative group overflow-hidden">
-                  <CardContent className="flex aspect-square items-center justify-center md:p-6">
+                <Card className="relative group cursor-pointer">
+                  <CardContent className="flex aspect-square items-center justify-center">
                     <Image
-                      src={`/companies/${company.src}.jpeg`}
-                      width={500}
-                      height={500}
-                      className="object-cover"
+                      src={`/companies/${company.src}.png`}
+                      width={800}
+                      height={800}
+                      className="object-cover w-full h-full rounded-xl"
                       alt={"company"}
                     />
                   </CardContent>
-                  <div className="absolute inset-0 bg-main opacity-0 transition-opacity group-hover:opacity-100 text-center text-white flex flex-col justify-center gap-1">
+                  <div className="absolute inset-0 bg-main opacity-0 rounded-xl transition-opacity group-hover:opacity-100 text-center text-white flex flex-col justify-center gap-1">
                     <h3 className="text-xs">{company.title}</h3>
                     <p className="text-[8px] font-light">
                       {company.description}

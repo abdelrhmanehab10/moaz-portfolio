@@ -35,13 +35,13 @@ const Works: FC<WorksProps> = ({}) => {
           }
           COMPANIES={[
             {
-              src: "1",
+              src: "hbeauty",
               title: "Half Beauty",
               description: "Care / E-commerce",
               href: "https://halfbeauty.com/",
             },
             {
-              src: "2",
+              src: "1",
               title: "Ta3ttr",
               description: "Perfume / E-commerce",
               href: "https://ta3ttar.com/",
